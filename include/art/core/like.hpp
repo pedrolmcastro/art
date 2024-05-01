@@ -14,7 +14,7 @@ namespace art {
     concept like = std::same_as<std::remove_cvref_t<T>, std::remove_cvref_t<U>>;
 
     template<class T, class... Types>
-    concept like_any_of = transform_same_as_any_of<T, std::remove_cvref_t, std::remove_cvref_t<Types>...>;
+    concept like_any_of = same_as_any_of<std::remove_cvref_t<T>, std::remove_cvref_t<Types>...>;
 
 
     template<class T, class U>
