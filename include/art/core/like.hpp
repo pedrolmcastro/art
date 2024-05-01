@@ -21,7 +21,7 @@ namespace art {
     concept unlike = different_from<std::remove_cvref_t<T>, std::remove_cvref_t<U>>;
 
     template<class T, class... Types>
-    concept unlike_all_of = (... and unlike<T, Types>);
+    concept unlike_all_of = different_from_all_of<std::remove_cvref_t<T>, std::remove_cvref_t<Types>...>;
 }
 
 
