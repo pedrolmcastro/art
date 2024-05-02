@@ -11,7 +11,7 @@ static_assert(    different_from<char, char volatile>);
 static_assert(    different_from_all_of<char>);
 static_assert(not different_from_all_of<char, char>);
 static_assert(    different_from_all_of<char, double>);
-static_assert(    different_from_all_of<char, char volatile>);
+static_assert(    different_from_all_of<char, char&, char&&>);
 static_assert(not different_from_all_of<char, signed char, unsigned char, char>);
 
 
