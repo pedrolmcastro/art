@@ -1,7 +1,7 @@
 #include "art/core/same_as_any_of.hpp"
 
 
-using art::same_as_any_of;
+using namespace art;
 
 
 static_assert(not same_as_any_of<int>);

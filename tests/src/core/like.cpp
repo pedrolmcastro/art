@@ -1,7 +1,7 @@
 #include "art/core/like.hpp"
 
 
-using art::like, art::unlike, art::like_any_of, art::unlike_all_of;
+using namespace art;
 
 
 static_assert(    like<float, float>);

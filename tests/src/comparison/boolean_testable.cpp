@@ -4,9 +4,8 @@
 #include "art/comparison/boolean_testable.hpp"
 
 
-using std::vector, std::unique_ptr;
-
-using art::boolean_testable;
+using namespace std;
+using namespace art;
 
 
 static_assert(    boolean_testable<bool>);

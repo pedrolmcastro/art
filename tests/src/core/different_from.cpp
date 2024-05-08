@@ -1,7 +1,7 @@
 #include "art/core/different_from.hpp"
 
 
-using art::different_from, art::different_from_all_of;
+using namespace art;
 
 
 static_assert(not different_from<char, char>);
