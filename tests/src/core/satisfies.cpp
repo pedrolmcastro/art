@@ -1,7 +1,7 @@
 #include <concepts>
 #include <type_traits>
 
-#include "art/utility/satisfies.hpp"
+#include "art/core/satisfies.hpp"
 
 
 using std::make_signed_t, std::signed_integral, std::unsigned_integral;
