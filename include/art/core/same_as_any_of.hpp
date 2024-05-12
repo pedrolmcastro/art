@@ -6,8 +6,7 @@
 
 
 namespace art {
-    template<class T, class... Types>
-    concept same_as_any_of = (... or std::same_as<T, Types>);
+    template<class T, class... Types> concept same_as_any_of = (... or std::same_as<T, Types>);
 }
 
 
